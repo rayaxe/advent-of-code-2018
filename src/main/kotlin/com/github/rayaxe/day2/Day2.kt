@@ -11,7 +11,7 @@ fun day2Part1(ids: List<String>): Int {
     return twoCount * threeCount
 }
 
-fun day2Part2(ids: List<String>): String {
+fun day2Part2(ids: List<String>): String? {
     var offset = 1
     ids.forEach { stringA ->
         val otherIds = ids.subList(offset, ids.size)
@@ -26,5 +26,5 @@ fun day2Part2(ids: List<String>): String {
         }
         offset++
     }
-    return ""
+    return null
 }
