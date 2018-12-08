@@ -3,8 +3,8 @@ package com.github.rayaxe.day2
 fun day2Part1(ids: List<String>): Int {
     var twoCount = 0
     var threeCount = 0
-    ids.forEach {
-        val charCount = it.groupingBy { c -> c }.eachCount().values
+    ids.forEach { id ->
+        val charCount = id.groupingBy { it }.eachCount().values
         if (charCount.contains(2)) twoCount++
         if (charCount.contains(3)) threeCount++
     }
@@ -19,9 +19,10 @@ fun day2Part2(ids: List<String>): String? {
             val differences: List<Boolean> = stringA.zip(stringB) { charA, charB -> charA != charB }
             if (differences.count { it } == 1) {
                 return stringA.toCharArray()
-                    .zip(differences) { char, isDifferent -> if (!isDifferent) char else null }
+                    .zip(differences) { char, isDifferent -> if (isDifferent) null else char }
                     .filterNotNull()
-                    .joinToString(separator = "")
+                    .fold(StringBuilder(), StringBuilder::append)
+                    .toString()
             }
         }
         offset++
