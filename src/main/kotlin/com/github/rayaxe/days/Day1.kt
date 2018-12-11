@@ -1,4 +1,4 @@
-package com.github.rayaxe.day1
+package com.github.rayaxe.days
 
 fun day1Part1(changes: List<String>): Int = changes.sumBy { it.toInt() }
 

@@ -1,4 +1,4 @@
-package com.github.rayaxe.day1
+package com.github.rayaxe.days
 
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Nested

@@ -1,9 +1,5 @@
-package com.github.rayaxe.day1
+package com.github.rayaxe.days
 
-import com.github.rayaxe.day3.Claim
-import com.github.rayaxe.day3.day3Part1
-import com.github.rayaxe.day3.day3Part2
-import com.github.rayaxe.day3.parseClaimString
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test

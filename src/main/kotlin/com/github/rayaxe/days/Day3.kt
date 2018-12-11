@@ -1,4 +1,4 @@
-package com.github.rayaxe.day3
+package com.github.rayaxe.days
 
 // FIXME `overlap` should not be a property of this class
 data class Claim(val id: Int, val pos: Pair<Int, Int>, val size: Pair<Int, Int>, var overlap: Boolean = false)

@@ -1,4 +1,4 @@
-package com.github.rayaxe.day2
+package com.github.rayaxe.days
 
 fun day2Part1(ids: List<String>): Int {
     var twoCount = 0
