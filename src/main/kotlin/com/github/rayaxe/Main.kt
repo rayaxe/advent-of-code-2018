@@ -16,6 +16,9 @@ fun main(args: Array<String>) {
     val inputDay4 = readLinesFromFile("input_day4.txt")
     println(day4Part1(inputDay4))
     println(day4Part2(inputDay4))
+    val inputDay5 = readLinesFromFile("input_day5.txt").first()
+    println(day5Part1(inputDay5))
+    println(day5Part2(inputDay5))
 }
 
 private fun readLinesFromFile(filename: String) = File("src/main/resources/days/" + filename).readLines()
